@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gygaversemarketplace-staging-230303-authRole",
+      "UnauthRoleArn": "arn:aws:iam::198469032795:role/amplify-gygaversemarketplace-staging-230303-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::198469032795:role/amplify-gygaversemarketplace-staging-230303-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-gygaversemarketplace-staging-230303-deployment",
+      "UnauthRoleName": "amplify-gygaversemarketplace-staging-230303-unauthRole",
+      "StackName": "amplify-gygaversemarketplace-staging-230303",
+      "StackId": "arn:aws:cloudformation:us-east-1:198469032795:stack/amplify-gygaversemarketplace-staging-230303/669dbd20-2b13-11ed-b2a9-12885a434a0d",
+      "AmplifyAppId": "d27rdftwd4lqxu"
+    }
+  }
+}
