@@ -6,10 +6,17 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { overrides, ...rest } = props;
+  const imageThreeFourSixOneTwoSixNineNineOnClick = useNavigateAction({
+    type: "url",
+    url: "https://gygaverse.com",
+  });
   return (
     <Flex
       gap="20px"
@@ -28,49 +35,23 @@ export default function NavBar(props) {
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
+        src="https://gygaverse.com/wp-content/uploads/2022/08/gygaverse-logo-text-pink-white.png"
+        onClick={() => {
+          imageThreeFourSixOneTwoSixNineNineOnClick();
+        }}
         {...getOverrideProps(overrides, "image34612699")}
       ></Image>
       <Flex
-        gap="40px"
-        width="558px"
-        alignItems="center"
-        grow="1"
-        basis="558px"
-        height="24px"
-        position="relative"
-        padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32129767076")}
-      >
-        <Text
-          fontFamily="Inter"
-          fontSize="30px"
-          fontWeight="700"
-          color="rgba(255,255,255,1)"
-          lineHeight="24px"
-          textAlign="left"
-          display="flex"
-          direction="column"
-          justifyContent="flex-start"
-          letterSpacing="0.15px"
-          shrink="0"
-          position="relative"
-          padding="0px 0px 0px 0px"
-          whiteSpace="pre-wrap"
-          children="Add Pet"
-          {...getOverrideProps(overrides, "Add Pet")}
-        ></Text>
-      </Flex>
-      <Flex
         gap="32px"
-        width="558px"
+        width="1136px"
         justifyContent="flex-end"
         alignItems="center"
         grow="1"
-        basis="558px"
+        basis="1136px"
         height="45px"
         position="relative"
         padding="0px 0px 0px 0px"
-        {...getOverrideProps(overrides, "Frame 32129767081")}
+        {...getOverrideProps(overrides, "Frame 321")}
       >
         <Text
           fontFamily="Inter"

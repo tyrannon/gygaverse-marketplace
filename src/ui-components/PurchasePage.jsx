@@ -7,7 +7,7 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Button, Flex, Image, Text, View } from "@aws-amplify/ui-react";
+import { Button, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function PurchasePage(props) {
   const { event, overrides, ...rest } = props;
   return (
@@ -42,6 +42,31 @@ export default function PurchasePage(props) {
           padding="19px 0px 19px 0px"
           {...getOverrideProps(overrides, "left column")}
         >
+          <Flex
+            gap="10px"
+            width="fit-content"
+            alignItems="flex-start"
+            shrink="0"
+            position="relative"
+            padding="5px 5px 5px 5px"
+            {...getOverrideProps(overrides, "closePurchase")}
+          >
+            <Icon
+              width="14px"
+              height="14px"
+              viewBox={{ minX: 0, minY: 0, width: 14, height: 14 }}
+              paths={[
+                {
+                  d: "M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z",
+                  fill: "rgba(13,26,38,1)",
+                  fillRule: "nonzero",
+                },
+              ]}
+              shrink="0"
+              position="relative"
+              {...getOverrideProps(overrides, "Vector")}
+            ></Icon>
+          </Flex>
           <Text
             fontFamily="Inter"
             fontSize="20px"

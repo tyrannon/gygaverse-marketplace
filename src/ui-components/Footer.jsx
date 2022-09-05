@@ -6,10 +6,38 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Footer(props) {
   const { overrides, ...rest } = props;
+  const footergygaversereactOneOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "mailto:info@gygaverse.com",
+  });
+  const facebookOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "https://www.facebook.com/Gygaverse-101642489217719",
+  });
+  const instagramOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "https://instagram.com/gygaverse",
+  });
+  const twitterOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "https://twitter.com/gygaverse",
+  });
+  const discordOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "https://discord.gg/JSzqKsEbd8",
+  });
   return (
     <Flex
       gap="27px"
@@ -30,11 +58,15 @@ export default function Footer(props) {
         {...getOverrideProps(overrides, "Frame 422")}
       ></View>
       <Image
-        width="1226px"
-        height="240px"
+        width="1492px"
+        height="255px"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
+        src="https://gygaverse.com/wp-content/uploads/2022/09/footer-gygaverse-react.png"
+        onClick={() => {
+          footergygaversereactOneOnClick();
+        }}
         {...getOverrideProps(overrides, "footer-gygaverse-react 1")}
       ></Image>
       <Flex
@@ -49,39 +81,51 @@ export default function Footer(props) {
         {...getOverrideProps(overrides, "Frame 421")}
       >
         <Image
-          width="85.25px"
-          grow="1"
-          basis="85.25px"
-          alignSelf="stretch"
+          width="29px"
+          height="59px"
+          shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
+          src="https://gygaverse.com/wp-content/uploads/2022/09/facebook-social-icon.png"
+          onClick={() => {
+            facebookOnClick();
+          }}
           {...getOverrideProps(overrides, "facebook")}
         ></Image>
         <Image
-          width="85.25px"
-          grow="1"
-          basis="85.25px"
-          alignSelf="stretch"
+          width="57px"
+          height="58px"
+          shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
+          src="https://gygaverse.com/wp-content/uploads/2022/09/instagram-social-icon.png"
+          onClick={() => {
+            instagramOnClick();
+          }}
           {...getOverrideProps(overrides, "instagram")}
         ></Image>
         <Image
-          width="85.25px"
-          grow="1"
-          basis="85.25px"
-          alignSelf="stretch"
+          width="58px"
+          height="50px"
+          shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
+          src="https://gygaverse.com/wp-content/uploads/2022/09/twitter-social-icon.png"
+          onClick={() => {
+            twitterOnClick();
+          }}
           {...getOverrideProps(overrides, "twitter")}
         ></Image>
         <Image
-          width="85.25px"
-          grow="1"
-          basis="85.25px"
-          alignSelf="stretch"
+          width="76px"
+          height="56px"
+          shrink="0"
           position="relative"
           padding="0px 0px 0px 0px"
+          src="https://gygaverse.com/wp-content/uploads/2022/09/discord-social-icon.png"
+          onClick={() => {
+            discordOnClick();
+          }}
           {...getOverrideProps(overrides, "discord")}
         ></Image>
       </Flex>

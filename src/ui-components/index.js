@@ -5,6 +5,7 @@
  **************************************************************************/
 
 export { default as FormCheckout } from "./FormCheckout";
+export { default as EventDetailCollection } from "./EventDetailCollection";
 export { default as ContactUs } from "./ContactUs";
 export { default as HeroLayout3 } from "./HeroLayout3";
 export { default as ActionCard } from "./ActionCard";
@@ -16,7 +17,7 @@ export { default as CommentCard } from "./CommentCard";
 export { default as HeroLayout2 } from "./HeroLayout2";
 export { default as HeroLayout4 } from "./HeroLayout4";
 export { default as PurchasePage } from "./PurchasePage";
-export { default as ProductDetail } from "./ProductDetail";
+export { default as EventDetail } from "./EventDetail";
 export { default as FAQItem } from "./FAQItem";
 export { default as Features4x1 } from "./Features4x1";
 export { default as Features2x2 } from "./Features2x2";

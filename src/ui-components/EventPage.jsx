@@ -14,7 +14,8 @@ export default function EventPage(props) {
     <Flex
       gap="8px"
       direction="column"
-      width="640px"
+      width="840px"
+      height="901px"
       justifyContent="center"
       alignItems="center"
       position="relative"
@@ -24,19 +25,19 @@ export default function EventPage(props) {
       {...getOverrideProps(overrides, "EventPage")}
     >
       <View
-        width="607px"
-        height="669px"
+        width="616px"
+        height="674px"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 423")}
       >
         <Image
-          width="607px"
-          height="669px"
+          width="615px"
+          height="673px"
           position="absolute"
-          top="4.25px"
-          left="0px"
+          top="0.5px"
+          left="0.5px"
           padding="0px 0px 0px 0px"
           src={event?.event_image}
           {...getOverrideProps(overrides, "event-image")}
