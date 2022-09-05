@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './App.css';
-import { Footer, NavBar, PurchasePage, EventDetail, EventPage } from './ui-components';
+import { Footer, NavBar, PurchasePage, EventPage } from './ui-components';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 
-function App() {
+function App({ user, signOut }) {
   // State
   // const [showEvents, setShowEvents] = useState(true)
   const [showPurchase, setShowPurchase] = useState(false)
@@ -19,9 +20,9 @@ function App() {
       },
     },
     // Signout button
-    // Button: {
-    //   onClick: signOut,
-    // },
+    Button: {
+      onClick: signOut,
+    },
     // Navbar Icon right Cat
     // image: {
     //   src: user?.attributes.profile
@@ -125,4 +126,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
