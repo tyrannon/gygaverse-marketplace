@@ -58,8 +58,8 @@ export default function Footer(props) {
         {...getOverrideProps(overrides, "Frame 422")}
       ></View>
       <Image
-        width="1492px"
-        height="255px"
+        width="1412px"
+        height="232px"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"

@@ -47,7 +47,7 @@ export default function EventDetail(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            src={event?.ticket_image}
+            src="https://gygaverse.com/wp-content/uploads/2022/09/tory-lanez-live-in-the-gygaverse.png"
             {...getOverrideProps(overrides, "image")}
           ></Image>
           <Flex
@@ -229,7 +229,7 @@ export default function EventDetail(props) {
                 padding="0px 0px 0px 0px"
                 size="small"
                 orientation="horizontal"
-                src=""
+                src="https://gygaverse.com/wp-content/uploads/2022/09/blue-bar.png"
                 {...getOverrideProps(overrides, "Divider34762754")}
               ></Divider>
               <Text

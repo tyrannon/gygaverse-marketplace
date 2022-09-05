@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { EventDetailCollection, Footer, NavBar, PurchasePage, EventDetail } from './ui-components';
+import { Footer, NavBar, PurchasePage, EventDetail, EventPage } from './ui-components';
 
 function App() {
   // State
@@ -44,8 +44,8 @@ function App() {
   }
 
   // EventDetailCollection Overrides
-  const eventDetailCollectionOverrides = {
-    'buyTickets': {
+  const eventPageOverrides = {
+    'event-image': {
       style: {
         cursor: "pointer"
       },
@@ -109,12 +109,13 @@ function App() {
       {/* Header */}
       <header className='App-header'>
         {showEventDetail && (
-          <EventDetail overrides={eventDetailCollectionOverrides}/>
+          <EventPage overrides={eventPageOverrides}/>
         )}
         
         {showPurchase && (
           <PurchasePage overrides={purchasePageOverrides}/>
         )}
+
 
       </header>
 

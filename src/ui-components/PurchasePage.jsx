@@ -111,6 +111,7 @@ export default function PurchasePage(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            src="https://gygaverse.com/wp-content/uploads/2022/09/blue-bar.png"
             {...getOverrideProps(overrides, "blue-seperator34722870")}
           ></Image>
           <Flex
@@ -207,6 +208,7 @@ export default function PurchasePage(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            src="https://gygaverse.com/wp-content/uploads/2022/09/blue-bar.png"
             {...getOverrideProps(overrides, "blue-seperator34722877")}
           ></Image>
           <Flex
@@ -341,6 +343,7 @@ export default function PurchasePage(props) {
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
+            src={event?.ticket_image}
             {...getOverrideProps(overrides, "event-profile-image")}
           ></Image>
           <Text

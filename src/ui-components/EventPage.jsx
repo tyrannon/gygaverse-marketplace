@@ -25,21 +25,21 @@ export default function EventPage(props) {
       {...getOverrideProps(overrides, "EventPage")}
     >
       <View
-        width="616px"
-        height="674px"
+        width="795px"
+        height="871px"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 423")}
       >
         <Image
-          width="615px"
-          height="673px"
+          width="795px"
+          height="869px"
           position="absolute"
-          top="0.5px"
+          top="1px"
           left="0.5px"
           padding="0px 0px 0px 0px"
-          src={event?.event_image}
+          src="https://gygaverse.com/wp-content/uploads/2022/09/marketplace-gygaverse-Recovered.png"
           {...getOverrideProps(overrides, "event-image")}
         ></Image>
       </View>
