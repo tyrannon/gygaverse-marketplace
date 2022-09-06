@@ -5,8 +5,8 @@
  **************************************************************************/
 
 import React from "react";
-import { Event } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
+import { Event } from "../models";
 import { FlexProps } from "@aws-amplify/ui-react";
 export declare type PurchasePageProps = React.PropsWithChildren<Partial<FlexProps> & {
     event?: Event;

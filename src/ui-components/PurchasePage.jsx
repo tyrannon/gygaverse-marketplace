@@ -6,10 +6,21 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function PurchasePage(props) {
   const { event, overrides, ...rest } = props;
+  const buttonThreeFourSevenTwoTwoEightSevenSixOnClick = useNavigateAction({
+    type: "url",
+    url: "https://buy.stripe.com/test_14k4ihgeE4FM8QEbII",
+  });
+  const buttonThreeFourSevenTwoTwoEightEightThreeOnClick = useNavigateAction({
+    type: "url",
+    url: "https://buy.stripe.com/test_5kAaGF4vW2xE9UI7st",
+  });
   return (
     <Flex
       gap="16px"
@@ -103,7 +114,7 @@ export default function PurchasePage(props) {
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
             children="Friday September 9th, 2022 - 9:00 pm EST"
-            {...getOverrideProps(overrides, "Event Date34722869")}
+            {...getOverrideProps(overrides, "Event Date")}
           ></Text>
           <Image
             width="555px"
@@ -151,7 +162,7 @@ export default function PurchasePage(props) {
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="General admission"
-                {...getOverrideProps(overrides, "General Admission34722873")}
+                {...getOverrideProps(overrides, "General Admission")}
               ></Text>
               <Text
                 fontFamily="Inter"
@@ -196,6 +207,9 @@ export default function PurchasePage(props) {
                 isDisabled={false}
                 variation="primary"
                 children="$50"
+                onClick={() => {
+                  buttonThreeFourSevenTwoTwoEightSevenSixOnClick();
+                }}
                 {...getOverrideProps(overrides, "Button34722876")}
               ></Button>
             </View>
@@ -291,6 +305,9 @@ export default function PurchasePage(props) {
                 isDisabled={false}
                 variation="primary"
                 children="$150"
+                onClick={() => {
+                  buttonThreeFourSevenTwoTwoEightEightThreeOnClick();
+                }}
                 {...getOverrideProps(overrides, "Button34722883")}
               ></Button>
             </View>
@@ -305,23 +322,7 @@ export default function PurchasePage(props) {
             position="relative"
             padding="36px 0px 0px 0px"
             {...getOverrideProps(overrides, "checkout")}
-          >
-            <Button
-              display="flex"
-              gap="0"
-              width="fit-content"
-              justifyContent="center"
-              alignItems="center"
-              shrink="0"
-              position="relative"
-              backgroundColor="rgba(250,56,157,1)"
-              size="default"
-              isDisabled={false}
-              variation="primary"
-              children="CHECKOUT"
-              {...getOverrideProps(overrides, "Button34722885")}
-            ></Button>
-          </Flex>
+          ></Flex>
         </Flex>
         <Flex
           gap="13px"
@@ -344,64 +345,6 @@ export default function PurchasePage(props) {
             src="https://gygaverse.com/wp-content/uploads/2022/09/tory-lanez-live-in-the-gygaverse.png"
             {...getOverrideProps(overrides, "event-profile-image")}
           ></Image>
-          <Text
-            fontFamily="Inter"
-            fontSize="20px"
-            fontWeight="700"
-            color="rgba(13,26,38,1)"
-            textTransform="uppercase"
-            lineHeight="25px"
-            textAlign="center"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            width="291px"
-            height="39px"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="order summary"
-            {...getOverrideProps(overrides, "General Admission34722888")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="700"
-            color="rgba(103,103,103,1)"
-            lineHeight="25px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            width="272px"
-            height="38px"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="General Admission $50"
-            {...getOverrideProps(overrides, "Event Date34722889")}
-          ></Text>
-          <Text
-            fontFamily="Inter"
-            fontSize="16px"
-            fontWeight="700"
-            color="rgba(103,103,103,1)"
-            lineHeight="25px"
-            textAlign="left"
-            display="flex"
-            direction="column"
-            justifyContent="flex-start"
-            width="272px"
-            height="38px"
-            shrink="0"
-            position="relative"
-            padding="0px 0px 0px 0px"
-            whiteSpace="pre-wrap"
-            children="Total: $50.00"
-            {...getOverrideProps(overrides, "Event Date34722890")}
-          ></Text>
         </Flex>
       </Flex>
     </Flex>
