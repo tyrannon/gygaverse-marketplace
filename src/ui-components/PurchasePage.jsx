@@ -83,7 +83,7 @@ export default function PurchasePage(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children={event?.name}
+            children="Tory lanez live in the gygaverse"
             {...getOverrideProps(overrides, "Event Title")}
           ></Text>
           <Text
@@ -102,7 +102,7 @@ export default function PurchasePage(props) {
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children={event?.event_time}
+            children="Friday September 9th, 2022 - 9:00 pm EST"
             {...getOverrideProps(overrides, "Event Date34722869")}
           ></Text>
           <Image
@@ -171,9 +171,7 @@ export default function PurchasePage(props) {
                 left="0px"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children={`${"$"}${
-                  event?.admission_general
-                }${" (INCLUDES TAX)"}`}
+                children="$50 (INCLUDES TAX)"
                 {...getOverrideProps(overrides, "Cost34722874")}
               ></Text>
             </View>
@@ -197,7 +195,7 @@ export default function PurchasePage(props) {
                 size="default"
                 isDisabled={false}
                 variation="primary"
-                children={`${"$"}${event?.admission_general}`}
+                children="$50"
                 {...getOverrideProps(overrides, "Button34722876")}
               ></Button>
             </View>
@@ -268,7 +266,7 @@ export default function PurchasePage(props) {
                 left="0px"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
-                children={`${"$"}${event?.admission_vip}`}
+                children="$150 (INCLUDES TAX)"
                 {...getOverrideProps(overrides, "Cost34722881")}
               ></Text>
             </View>
@@ -292,7 +290,7 @@ export default function PurchasePage(props) {
                 size="default"
                 isDisabled={false}
                 variation="primary"
-                children={`${"$"}${event?.admission_vip}`}
+                children="$150"
                 {...getOverrideProps(overrides, "Button34722883")}
               ></Button>
             </View>
@@ -339,11 +337,11 @@ export default function PurchasePage(props) {
         >
           <Image
             width="315px"
-            height="182px"
+            height="192px"
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
-            src={event?.ticket_image}
+            src="https://gygaverse.com/wp-content/uploads/2022/09/tory-lanez-live-in-the-gygaverse.png"
             {...getOverrideProps(overrides, "event-profile-image")}
           ></Image>
           <Text

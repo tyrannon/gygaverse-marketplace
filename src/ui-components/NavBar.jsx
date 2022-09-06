@@ -8,12 +8,14 @@
 import React from "react";
 import {
   getOverrideProps,
+  useAuth,
   useNavigateAction,
 } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { overrides, ...rest } = props;
-  const imageThreeFourSixOneTwoSixNineNineOnClick = useNavigateAction({
+  const authAttributes = useAuth().user?.attributes ?? {};
+  const imageOnClick = useNavigateAction({
     type: "url",
     url: "https://gygaverse.com",
   });
@@ -37,9 +39,9 @@ export default function NavBar(props) {
         padding="0px 0px 0px 0px"
         src="https://gygaverse.com/wp-content/uploads/2022/08/gygaverse-logo-text-pink-white.png"
         onClick={() => {
-          imageThreeFourSixOneTwoSixNineNineOnClick();
+          imageOnClick();
         }}
-        {...getOverrideProps(overrides, "image34612699")}
+        {...getOverrideProps(overrides, "image")}
       ></Image>
       <Flex
         gap="32px"
@@ -48,7 +50,7 @@ export default function NavBar(props) {
         alignItems="center"
         grow="1"
         basis="1136px"
-        height="45px"
+        height="33px"
         position="relative"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 321")}
@@ -68,7 +70,7 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Hello, Kaiya"
+          children={`${"Hello, "}${authAttributes["email"]}`}
           {...getOverrideProps(overrides, "Hello, Kaiya")}
         ></Text>
         <Button
@@ -86,15 +88,6 @@ export default function NavBar(props) {
           children="Signout"
           {...getOverrideProps(overrides, "Button")}
         ></Button>
-        <Image
-          width="45px"
-          height="45px"
-          shrink="0"
-          position="relative"
-          borderRadius="160px"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "image29767085")}
-        ></Image>
       </Flex>
     </Flex>
   );

@@ -10,6 +10,23 @@
       "StackName": "amplify-gygaversemarketplace-staging-230303",
       "StackId": "arn:aws:cloudformation:us-east-1:198469032795:stack/amplify-gygaversemarketplace-staging-230303/669dbd20-2b13-11ed-b2a9-12885a434a0d",
       "AmplifyAppId": "d27rdftwd4lqxu"
+    },
+    "categories": {
+      "auth": {
+        "gygaversemarketplace": {
+          "userPoolId": "us-east-1_9Tq6IaAzl",
+          "userPoolName": "gameliftTutorial",
+          "webClientId": "7vt5mml7hadu6usr2v2gdjqtqq",
+          "nativeClientId": "7vt5mml7hadu6usr2v2gdjqtqq",
+          "identityPoolId": "us-east-1:7d3ea93b-2c14-4b92-8570-bc4d52a8b3cf",
+          "identityPoolName": "gameliftTutorial_IdPool",
+          "allowUnauthenticatedIdentities": false,
+          "authRoleArn": "arn:aws:iam::198469032795:role/Cognito_gameliftTutorial_IdPoolAuth_Role",
+          "authRoleName": "Cognito_gameliftTutorial_IdPoolAuth_Role",
+          "unauthRoleArn": "arn:aws:iam::198469032795:role/Cognito_gameliftTutorial_IdPoolUnauth_Role",
+          "unauthRoleName": "Cognito_gameliftTutorial_IdPoolUnauth_Role"
+        }
+      }
     }
   }
 }

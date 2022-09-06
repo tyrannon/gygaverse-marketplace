@@ -14,7 +14,7 @@ function App({ user, signOut }) {
   // NavBar Overrides
    const navBarOverrides = {
     // Gygaverse Logo
-    image34612699: {
+    image: {
       style: {
         cursor: "pointer"
       },
@@ -23,34 +23,18 @@ function App({ user, signOut }) {
     Button: {
       onClick: signOut,
     },
-    // Navbar Icon right Cat
-    // image: {
-    //   src: user?.attributes.profile
-      // src: "https://img.icons8.com/color/50/000000/cat"
-    // },
-    // Add Pet button left
-    // "Add Pet": {
-    //   // change cursor to hand on hover
-    //   style: {
-    //     cursor: "pointer"
-    //   },
-    //   // Add Pet Button top left
-    //   onClick: () => {
-    //     // saveFile();
-    //     setShowForm(!showForm);
-    //     if (showPets) setShowPets(false)
-    //     else setShowPets(true);
-    //   }
-    // }
   }
 
   // EventDetailCollection Overrides
   const eventPageOverrides = {
+    // mouse cursor pointer on hover over event
     'event-image': {
       style: {
         cursor: "pointer"
       },
+      // click to open the purchase window
       onClick: () => {
+        console.log(user);
         setShowPurchase(!showPurchase);
         if (showEventDetail) setShowEventDetail(false)
         else setShowEventDetail(true);
